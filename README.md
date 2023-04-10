@@ -6,6 +6,17 @@
 + `pycountry` :
   + `pip install pycountry`
 
+## Usage
+
+```
+usage: duolingOSINT.py [-h] (-m MAIL | -u USERNAME)
+
+options:
+  -h, --help            show this help message and exit
+  -m MAIL, --mail MAIL  Target mail address
+  -u USERNAME, --username USERNAME Target Duolinguo username
+```
+
 ## Exemple
 
 ```
