@@ -27,3 +27,7 @@ Languages studied      :
    + xx crowns
    + xxxx xp
 ```
+
+## Other
+
+Inspired by [Palenath](https://github.com/megadose)'s work
