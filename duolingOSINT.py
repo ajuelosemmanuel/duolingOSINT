@@ -35,7 +35,7 @@ if __name__ == "__main__":
             print("Name                   : " + user["name"])
         print("Account Creation Date  : " + str(datetime.datetime.fromtimestamp(user["creationDate"])))
         if user["profileCountry"] is not None:
-            print("Country                : " + pycountry.countries.get(alpha_2=user["profileCountry"]).common_name)
+            print("Country                : " + pycountry.countries.get(alpha_2=user["profileCountry"]).name)
         print("Streak                 : " + str(user["streak"]))
         print("Has recent activity    : " + str(user["hasRecentActivity15"]))
         if user["bio"] != "":
