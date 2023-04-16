@@ -2,12 +2,13 @@ import datetime, argparse, requests, pycountry
 
 ENDPOINT_MAIL = "https://www.duolingo.com/2017-06-30/users?email="
 ENDPOINT_USERNAME = "https://www.duolingo.com/2017-06-30/users?username="
+USER_AGENT = "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/112.0.0.0 Safari/537.36"
 
 def call_by_username(username):
-    return requests.get(ENDPOINT_USERNAME + username, headers={"User-Agent": "Miaou"}).json()
+    return requests.get(ENDPOINT_USERNAME + username, headers={"User-Agent": USER_AGENT}).json()
 
 def call_by_mail(mail):
-    return requests.get(ENDPOINT_MAIL + mail, headers={"User-Agent": "Miaou"}).json()
+    return requests.get(ENDPOINT_MAIL + mail, headers={"User-Agent": USER_AGENT}).json()
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
