@@ -1,4 +1,6 @@
 import datetime, argparse, requests, pycountry
+from iso639 import languages
+from crowncount import crown_dict
 
 ENDPOINT_MAIL = "https://www.duolingo.com/2017-06-30/users?email="
 ENDPOINT_USERNAME = "https://www.duolingo.com/2017-06-30/users?username="
@@ -43,6 +45,7 @@ if __name__ == "__main__":
             print("Biography              : " + user["bio"])
         print("Languages studied      : ")
         for course in user["courses"]:
-            print(" + " + course["title"])
-            print("   + " + str(course["crowns"])+ " crowns")
+            print(" + " + course["title"] + ' (from ' + languages.get(alpha2=course["fromLanguage"]).name +')')
+            completion = round(100 * course["crowns"] / int(crown_dict[course["title"] + "_" + languages.get(alpha2=course["fromLanguage"]).name]), 2)
+            print("   + " + str(course["crowns"])+ " crowns (" + str(completion) + " %)")
             print("   + " + str(course["xp"]) + " xp")

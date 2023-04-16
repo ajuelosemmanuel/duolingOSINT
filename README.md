@@ -3,8 +3,8 @@
 ## Requirements
 
 + [Python](https://www.python.org/downloads/)
-+ `pycountry` :
-  + `pip install pycountry`
++ Packages :
+  + `pip install -r requirements.txt`
 
 ## Usage
 
@@ -31,11 +31,11 @@ Country                : xxxxxxxx
 Streak                 : xxx
 Has recent activity    : True/False
 Languages studied      : 
- + Language 1
-   + xxx crowns
+ + Language 1 (from Language)
+   + xxx crowns (xx.xx %)
    + xxxxx xp
- + Language 2
-   + xx crowns
+ + Language 2 (from Language)
+   + xx crowns (xx.xx %)
    + xxxx xp
 ```
 
