@@ -42,3 +42,9 @@ Languages studied      :
 ## Other
 
 Inspired by [Palenath](https://github.com/megadose)'s work
+
+## Troubleshooting
+
+The `User-Agent` might get banned - feel free to tell me about it, and I will change it.
+
+If you have any idea about how I could improve the script, I'll gladly hear about it !
