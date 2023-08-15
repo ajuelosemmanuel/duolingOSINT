@@ -16,7 +16,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument('-m', '--mail',help="Target mail address",required=False)
-    group.add_argument('-u', '--username',help="Target Duolinguo username",required=False)
+    group.add_argument('-u', '--username',help="Target Duolingo username",required=False)
     args = parser.parse_args()
     if args.mail is None:
         response = call_by_username(args.username)
